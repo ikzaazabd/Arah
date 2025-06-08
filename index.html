@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arah - Rekomendasi Jurusan</title>
+    <link rel="icon" href="/arah-icon.png" sizes="48x48" />
+    </head>
+<body>
+    <app-bar></app-bar>
+
+    <main>
+        <section id="page-home">
+            <div class="hero-section">
+                <div class="hero-text">
+                    <p class="subtitle">Education and inclusivity</p>
+                    <h2 class="title">MACHINE LEARNING-BASED TEST TO UNCOVER YOUR POTENTIAL</h2>
+                    <hr style="border: 1px solid #20B398;">
+                    <p class="description">
+                        Arah menggunakan pendekatan berbasis machine learning untuk menganalisis nilai rapor dan memberikan rekomendasi jurusan yang paling sesuai dengan kekuatan akademikmu. Sistem ini membantu kamu mengenali potensi yang mungkin tidak terlihat secara langsung, lalu mengarahkannya ke bidang studi yang tepat.
+                    </p>
+                    <a href="#form" class="start-button">
+                        Start Test <span>&rarr;</span>
+                    </a>
+                </div>
+                <div class="hero-image-container">
+                    <img src="/arah-hero.png" alt="Person celebrating success" class="main-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-section">
+                <div class="process-step">
+                    Masukkan <strong>Nilai Rapor</strong> dengan mengisi bagian bagian yang ada untuk diidentifikasi.
+                </div>
+                <div class="process-step">
+                    Arah akan menganalisis datamu dan memberikan <strong>rekomendasi jurusan</strong> yang cocok.
+                </div>
+                <div class="process-step">
+                    Lihat detail jurusan, <strong>kampus yang relevan</strong>, dan referensi belajar untuk mendalami minatmu.
+                </div>
+            </div>
+        </section>
+
+        <section id="page-form">
+            <student-form></student-form>
+        </section>
+
+        <section id="page-prediction">
+            <h2>Hasil Rekomendasi Jurusan Anda</h2>
+            <prediction-list></prediction-list>
+        </section>
+        
+        <section id="page-about">
+            <app-about-us></app-about-us> </section>
+    </main>
+        <footer>
+        <app-footer></app-footer> </footer>
+</body>
+
+</html>
